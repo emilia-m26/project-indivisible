@@ -11,6 +11,7 @@ class CreateCompanies < ActiveRecord::Migration[6.0]
       t.string :general_email
       t.string :company_url
       t.string :category
+      #t.integer :user_id
 
       t.timestamps
     end
