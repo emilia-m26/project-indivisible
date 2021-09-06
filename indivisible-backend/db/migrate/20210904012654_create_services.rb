@@ -10,7 +10,7 @@ class CreateServices < ActiveRecord::Migration[6.0]
       t.string :contact_number
       t.string :contact_email
       t.string :service_url
-      #t.integer :user_id
+      t.integer :user_id
 
       t.timestamps
     end
