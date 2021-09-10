@@ -9,6 +9,7 @@ import ContactUs from './ContactUs';
 import NotFound from './NotFound';
 
 const Router = () => (
+    <>
     <BrowserRouter>
     <Switch>
         {/* <Route exact path="/" component={}/> */}
@@ -19,11 +20,12 @@ const Router = () => (
         <Route exact path="/jobs" component={Jobs}/>
         <Route exact path="/companies" component={Companies}/>
         <Route exact path="/services" component={Services}/>
-        <Route exact path="/Contact-us" component={ContactUs}/>
+        <Route exact path="/contact-us" component={ContactUs}/>
        
         <Route component={NotFound} />
     </Switch>
     </BrowserRouter>
+    </>
 
 )
 
