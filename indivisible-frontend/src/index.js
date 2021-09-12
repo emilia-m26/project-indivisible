@@ -22,6 +22,7 @@ import React from 'react';
 import { render } from 'react-dom';
 //import "./css/style.css";
 import Router from "./components/Router.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 //takes two things - first JSX, second mounting point
