@@ -15,6 +15,7 @@ export default function Login() {
     event.preventDefault();
     console.log(event.target[0].value)
     console.log(event.target[1].value)
+    console.log(event)
   }
 
   return (
