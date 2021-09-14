@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+  get 'home' => 'home#index'
   resources :services
   resources :users
   resources :jobs
