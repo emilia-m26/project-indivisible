@@ -8,13 +8,13 @@
 
 
 #user 1
-User.create(name:"tester", username: "testing123", user_email: "testing123@test.com", password_digest:"tester123");
+User.create(name:"tester", username: "testing1", email: "testing123@test.com", password:"tester123");
 
 #user 2
-User.create(name:"tester2", username: "testing1234", user_email: "testing1234@test.com", password_digest:"tester1234");
+User.create(name:"tester2", username: "testing12", email: "testing1234@test.com", password:"tester123");
 
 #user 3
-User.create(name:"tester3", username: "testing1235", user_email: "testing1235@test.com", password_digest:"tester1235");
+User.create(name:"tester3", username: "testing123", email: "testing1235@test.com", password:"tester123");
 
 #company 1
 Company.create(company_name: "MyCompanyDoctor", address_1:"555 Sycamore Ave", address_2:"Suite 203", city:"Las Vegas", state:"Nevada", general_number:"9998880000", general_email:"mycompany@test.com", company_url:"mycompany.com", category: "Health Services", user_id:1);
