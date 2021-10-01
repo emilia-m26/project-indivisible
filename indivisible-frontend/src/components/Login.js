@@ -14,7 +14,29 @@ export default function Login(props) {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(event)
+    console.log(event.target[0].value)
+    console.log(event.target[1].value)
+    
+    fetch(`http://localhost:3001/users`, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+        //"Accept": "application/json"
+      body: JSON.stringify({
+          email,
+          //password
+        }),
+      })
+    .then(resp => resp.json())
+    .then(data => {
+    //   //localStorage.setItem("auth_token", data.token)
+    //   //props.handleLogin(data.user)
+     console.log(data.user)})
+    
+    //})
   
+    // setEmail("")
+    // setPassword("")
+
     // console.log(event.target[0].value)
     // console.log(event.target[1].value)
     // console.log(event)
