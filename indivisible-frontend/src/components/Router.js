@@ -7,8 +7,10 @@ import Jobs from './Jobs';
 import JobsForm from './JobsForm';
 import Companies from './Companies';
 import Services from './Services';
+import ServicesForm from './ServicesForm';
 import ContactUs from './ContactUs';
 import NotFound from './NotFound';
+
 
 const Router = () => (
     <>
@@ -24,6 +26,7 @@ const Router = () => (
         <Route exact path="/job-form" component={JobsForm}/>
         <Route exact path="/companies" component={Companies}/>
         <Route exact path="/services" component={Services}/>
+        <Route exact path="/service-form" component={ServicesForm}/>
         <Route exact path="/contact-us" component={ContactUs}/>
        
         <Route component={NotFound} />
