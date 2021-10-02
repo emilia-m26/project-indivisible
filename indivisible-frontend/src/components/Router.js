@@ -4,6 +4,7 @@ import Signup from './Signup';
 import Login from './Login';
 import Dashboard from './Dashboard';
 import Jobs from './Jobs';
+import JobsForm from './JobsForm';
 import Companies from './Companies';
 import Services from './Services';
 import ContactUs from './ContactUs';
@@ -20,6 +21,7 @@ const Router = () => (
         <Route exact path="/login" component={Login}/>
         <Route exact path="/dashboard" component={Dashboard}/>
         <Route exact path="/jobs" component={Jobs}/>
+        <Route exact path="/job-form" component={JobsForm}/>
         <Route exact path="/companies" component={Companies}/>
         <Route exact path="/services" component={Services}/>
         <Route exact path="/contact-us" component={ContactUs}/>
